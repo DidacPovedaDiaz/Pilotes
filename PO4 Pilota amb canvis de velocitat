@@ -1,0 +1,21 @@
+int pelota = 0;
+int a = 0;
+void setup(){
+ size(500,200);
+ }
+
+ void draw(){
+ background(200);
+ fill(250,0,0);
+ ellipse(pelota,100,50,50); 
+ pelota = pelota +a;   
+ if (pelota>500){
+ a = - 5;
+ }
+ if (pelota<1){
+ a = + 5;
+ }
+  if (pelota==250){
+ a = a*2;
+  }
+ }
